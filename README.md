@@ -1,6 +1,6 @@
 # Slack Bolt App
 
-A basic Slack app using Bolt framework with AI Assistant functionality.
+A TypeScript-based Slack app using Bolt framework with AI Assistant functionality.
 
 ## Setup
 
@@ -16,8 +16,14 @@ SLACK_APP_TOKEN=your_app_token
 pnpm install
 ```
 
-3. Start the app:
+3. Start the app in development mode (with auto-reload):
 ```
+pnpm dev
+```
+
+Or build and start in production mode:
+```
+pnpm build
 pnpm start
 ```
 
@@ -41,4 +47,26 @@ To enable AI assistant functionality in your Slack App settings:
 3. Subscribe to the following events in the **Event Subscriptions** page:
    - `assistant_thread_started`
    - `assistant_thread_context_changed`
-   - `message.im` 
+   - `message.im`
+
+## Development
+
+The app is written in TypeScript and uses the following tools:
+- `typescript` for type safety
+- `nodemon` for auto-reloading during development
+- `ts-node` for running TypeScript files directly
+- `prettier` for code formatting
+
+### Code Formatting
+
+The project uses Prettier for consistent code formatting. You can format your code with:
+
+```
+pnpm format
+```
+
+To check if your code is properly formatted without making changes:
+
+```
+pnpm format:check
+``` 

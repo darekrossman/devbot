@@ -9,6 +9,7 @@ A TypeScript-based Slack app using Bolt framework with AI Assistant functionalit
 SLACK_SIGNING_SECRET=your_signing_secret
 SLACK_BOT_TOKEN=your_bot_token
 SLACK_APP_TOKEN=your_app_token
+OPENROUTER_API_KEY=your_openrouter_api_key
 ```
 
 2. Install dependencies:
